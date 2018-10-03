@@ -1,0 +1,75 @@
+.homeNavbar{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+/*
+.nav-conte>.active>a{
+    color: white;
+    background-color: transparent;
+}
+.nav-conte>li>a:link{
+    color: white;
+}
+.navbar-nav>.active a{
+     text-decoration: underline;
+    background-color
+}/*/
+.homeNavbar>li>a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+}
+.nav>li>a{
+    padding: 10px 10px;
+}
+.nav-conte>li>a.active{
+    text-decoration: underline;
+    background-color: transparent;
+}
+.navbar-static-top {
+  margin-bottom: 19px;
+  background-color: transparent;
+
+}
+.homeNavbar button#registro{
+    background-color: white;
+    color:#00437b;
+    border: none;
+}
+
+.peopleheader{
+    background-color: white;
+    height: 65px;
+    box-shadow: 3px 3px 5px rgba(100,100,100,0.4);
+<<<<<<< HEAD
+    margin-bottom: 0;
+    z-index: 10px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 0;
+    z-index: 10px;
+=======
+>>>>>>> 081c519cb534ab585354353d5f55e106f503281f
+>>>>>>> 5643d432b62a802b3488a5e6be87e29ee81346a2
+}
+.peopleheader ul{
+    padding-top: 12px;
+   
+}
+
+.displaynone{
+    display: none;
+}

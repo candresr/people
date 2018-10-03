@@ -1,0 +1,110 @@
+/*
+	Stylesheet for Tigra Calendar v5.0
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed) 
+	URL: http://www.softcomplex.com/products/tigra_calendar/
+
+	- all image paths are relative to path of stylesheet
+	- the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+/* input box in default state */ 
+.tcalInput {
+	background: url('../ico/calendar/icocalendar.png') 100% 50% no-repeat;
+	padding-right: 20px;
+	cursor: pointer;
+	border: 1px solid #B2B4B4;
+	border-radius: 3px;
+	background-color: #F2F0F0;
+	border-color: #B2B4B4;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+	background-image: url('../ico/calendar/icocalendar.png');
+}
+/* container of calendar's pop-up */
+#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	width: 190px;
+	background-color: white;
+	margin-top: 2px;
+	padding: 0 2px 2px 2px;
+	border: 1px solid rgba(100,100,100,0.4);
+
+	-moz-box-shadow: 1px 1px 4px rgba(100,100,100,0.4);
+	-webkit-box-shadow: 1px 1px 4px rgba(100,100,100,0.4);
+	box-shadow: 1px 1px 4px rgba(100,100,100,0.4);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#tcalControls td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	width: 16px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#tcalControls th {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	line-height: 25px;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'latobold';
+    color:#838383;
+	font-weight: bold;
+	white-space: nowrap;
+
+
+}
+#tcalPrevYear { background-image: url('../ico/calendar/icocalenleft2.png'); }
+#tcalPrevMonth { background-image: url('../ico/calendar/icocalenleft.png'); }
+#tcalNextMonth { background-image: url('../ico/calendar/icocalenright.png'); }
+#tcalNextYear { background-image: url('../ico/calendar/icocalenright2.png'); }
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+	border-collapse: collapse;
+	width: 100%;
+}
+#tcalGrid th {
+	border:none;
+	border-collapse: collapse;
+	padding: 3px 0;
+	text-align: center;
+	font-family:'latoregular';
+	font-size: 10px;
+	color: #5D5E5E;
+}
+#tcalGrid td {
+	border: 0;
+	border-collapse: collapse;
+	padding: 2px 0;
+	text-align: center;
+	font-family: 'latolight';
+	width: 14%;
+	font-size: 11px;
+	cursor: pointer;
+    height: 20px;
+    width: 20px;
+}		
+#tcalGrid td.tcalOtherMonth { color: silver; }
+#tcalGrid td.tcalWeekend { }
+#tcalGrid td.tcalToday {   
+    border-bottom: 2px solid #26477E; }
+#tcalGrid td.tcalSelected { background-color: #00B6A9;
+    color: white;
+    border-radius: 48px; }		
